@@ -44,7 +44,24 @@ int main() {
 
   // b/=10; // b=b/10
 
-  printf("value of b: %d", b);
+  printf("value of b: %d\n", b);
+
+  int g = 1;
+  g++;      // g=g+1
+  printf("value of g: %d\n", g);
+
+  
+  // ANOTHER TRICKY PART^1
+  int h = 1;
+  printf("value of h (normal): %d\n", h);
+
+  // printf("value of h: %d\n", h++);
+  printf("value of h: %d\n", ++h);
+  printf("value of h: %d\n", h);
+
+  /* h--;
+   * --h;
+   */
 
   // scanf("");
   // printf("Hello world! \n");
@@ -77,3 +94,14 @@ int main() {
 // ODD EVEN
 // if we divide by 2, if it returns 0 then its EVEN else it's ODD.
 
+/* ^1
+ * The thing is, we have set the h variable to 1.
+ * then in printf, we have done h++. which returns 1. but in normal sense
+ * it would return 2. BUT NO!
+ * in third line, it's returning 2.
+ * THE STORY IS, when first printed, it just printed the real value then
+ * it added 1 to it. that's why in third line it returned 2.
+ *
+ * IF WE WANT TO print 2 in second line then,
+ * we can use ++h! see the code above.
+ */
