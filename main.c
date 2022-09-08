@@ -27,6 +27,7 @@ int main() {
 
   int result = a/b;
   int remainder = a%b;
+  int multiplication = a*b;
 
   float result2 = c/d;
   
@@ -34,6 +35,8 @@ int main() {
   printf("result = %d\nremainder = %d\n", result, remainder);
 
   printf("result2 = %f\n", result2);
+
+  printf("Multiplication: %d", multiplication);
 
   // TRICKY PART! EASY!
   b=b+2;
