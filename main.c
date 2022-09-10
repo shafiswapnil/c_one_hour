@@ -63,6 +63,9 @@ int main() {
    * --h;
    */
 
+  float x = 3.0;
+  double testDouble;
+
   // scanf("");
   // printf("Hello world! \n");
 
