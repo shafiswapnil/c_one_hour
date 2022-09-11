@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <stdbool.h>         // to include boolean data types. NO NEED IN C++
 
+#define NUMBER 100           // PRE PROCESSOR DIRECTIVE
+
 int main() {
+  // Starting "Variables, Data types & Arithmetic"
   int integer = 32;          // int can carry 32 bit
   int INTEGER = 32;
   int INTeger = 32;
@@ -63,8 +66,32 @@ int main() {
    * --h;
    */
 
-  float x = 3.0;
-  double testDouble;
+
+  // STARTING "Logic, if-else, while and for loop,switch"
+  a = 21;
+  b = 65;
+
+  /* if (a<NUMBER) {
+    // inside these braces, it's called block!
+    printf("%d is less than %d\n", a, NUMBER);
+  } else {
+    // we're in else block
+    if (a==50) {
+      printf("%d is equal to %d\n", a, NUMBER);
+    } else {
+      printf("%d is greater than %d\n", a, NUMBER);
+    }
+  } */
+
+  // if we rewrite the if else again
+  if (a < NUMBER) {
+    printf("%d is less than %d\n", a, NUMBER);
+  } else if (a == NUMBER) {
+    printf("%d is equal to %d\n", a, NUMBER);
+  } else {
+    printf("%d is greater than %d", a, NUMBER);
+  }
+
 
   // scanf("");
   // printf("Hello world! \n");
@@ -108,3 +135,11 @@ int main() {
  * IF WE WANT TO print 2 in second line then,
  * we can use ++h! see the code above.
  */
+
+// IMPORTANT STUFF!
+// if we don't supply variable name in printf() statement after using format specifier, it'll temporarily replace with a garbage value.
+
+// DEFINE OR MACRO OR PRE PROCESSOR DIRECTIVE
+// has to be in UPPER CASE
+// #define directive is used to declare some constant values or an expression with A NAME that can be used throughout our C program.
+
