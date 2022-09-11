@@ -12,7 +12,17 @@
  */
 
 int main () {
-  printf("Hello world\n");
+  printf("Program starts\n");
+
+  /* DATA TYPES
+   * int
+   * long
+   * float
+   * double
+   * char
+   * bool
+   * 
+   */
 
   return 0;
 }
