@@ -2,6 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Launch QuickStart",
+      "request": "launch",
+      "mainClass": "QuickStart",
+      "projectName": "c-one-hour_e7485954"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
