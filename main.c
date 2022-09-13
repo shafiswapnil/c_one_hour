@@ -92,6 +92,61 @@ int main() {
     printf("%d is greater than %d", a, NUMBER);
   }
 
+  
+  // STARTING LOOP
+  int counter = 0;
+  counter = 1;
+
+  // WHILE LOOP
+  while (counter<20) {
+    // first method
+    // printf("Counter is %d\n", counter);
+    // counter++;
+
+    // second method
+    // printf("Counter is %d\n", counter++);
+
+    // third method
+    // printf("Counter is %d\n", ++counter);
+
+    // more increment
+    // printf("Counter is %d\n", counter+=2);
+
+    // multiplication ⚠️
+    // printf("Counter is %d\n", counter*=2);
+    /* WARNING!
+     * this code will hung the execution because if we multiply a number with 0, result will be always ZERO.
+    */
+
+    // MULTIPLICATION (more important)
+    // printf("Counter is %d\n", counter*=2);
+    /* ATTENTION HERE!
+     * Above code is printing till 32, but it has to be till 20. there's a fix for it below.
+     */
+    printf("Counter is %d\n", counter);
+    counter*=2;
+  }
+
+  printf("current value of counter after loop: %d\n", counter);
+
+
+  /* DO WHILE LOOP
+   * think of a scenario that, in a while loop, if the condition is true then it executes.
+   * if the condition is not true, then noting is the code block is executed.
+   * SO,
+   * if we want to execute at least once the code, then if it's false, it won't run again.
+   */
+  int counter2 = 50;
+  
+  do {
+    printf("Counter2 is %d\n", counter2);
+    counter2*=2;
+  } while (counter2<20);
+
+
+  // FOR LOOP
+  // for () {}
+
 
   // scanf("");
   // printf("Hello world! \n");
@@ -142,4 +197,7 @@ int main() {
 // DEFINE OR MACRO OR PRE PROCESSOR DIRECTIVE
 // has to be in UPPER CASE
 // #define directive is used to declare some constant values or an expression with A NAME that can be used throughout our C program.
+
+// while LOOP
+// while loop means execute "until when".
 
