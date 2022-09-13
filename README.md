@@ -16,3 +16,5 @@ Data Types in C
 
 2. [#define and #include in C](https://www.scaler.com/topics/c/define-and-include-in-c/#:~:text=What%20is%20%23define,getch()%2C%20etc.)
 
+3. [Why we use the do while loop in C?](https://www.quora.com/Why-we-use-the-do-while-loop-in-C)
+
