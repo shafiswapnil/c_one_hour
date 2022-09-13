@@ -145,7 +145,30 @@ int main() {
 
 
   // FOR LOOP
-  // for () {}
+  for (int counter3 = 1; counter3 < 20; counter3*=2) {
+    printf("counter3 is = %d\n",counter3);
+  }
+
+  for (int counter4 = 1; counter4 < 13; counter4++) {
+    if (counter4 == 10) {
+      continue; // meaning it will skip the iteration; program will skip when 10 is the value.
+    }
+
+    printf("counter4 is = %d\n", counter4);
+  }
+
+
+  int userNumber = 12;
+
+  for (int counter5 = 1; counter5 < 30; counter5++) { // maximum we will go 30
+    if (counter5 == userNumber) {
+      break; // meaning it will stop the loop when the counter5 variable is 5.
+    }
+
+    printf("counter5 is = %d\n", counter5);
+  }
+
+  // HOMEWORK: use continue and break inside while and do while loop
 
 
   // scanf("");
