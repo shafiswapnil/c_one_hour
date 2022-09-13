@@ -168,7 +168,23 @@ int main() {
     printf("counter5 is = %d\n", counter5);
   }
 
+  /* UNDERSTANDING BREAK :
+  for (intialization; condition; increment;) {
+    for (intialization; condition; increment;) {
+      if (condition) {
+        break; 
+        // ⚠️👇
+        // this break means, it will skip the for loop on the "second" loop.
+        // not the first for loop.
+      }
+    }
+  }
+  */
+
   // HOMEWORK: use continue and break inside while and do while loop
+
+  // Starting SWITCH LOOP
+  
 
 
   // scanf("");
