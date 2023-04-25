@@ -1,39 +1,40 @@
 #include <stdio.h>
-#include <stdbool.h>         // to include boolean data types. NO NEED IN C++
+#include <stdbool.h> // to include boolean data types. NO NEED IN C++
 
-#define NUMBER 100           // PRE PROCESSOR DIRECTIVE
+#define NUMBER 100 // PRE PROCESSOR DIRECTIVE
 
-int main() {
+int main()
+{
   // Starting "Variables, Data types & Arithmetic"
-  int integer = 32;          // int can carry 32 bit
+  int integer = 32; // int can carry 32 bit
   int INTEGER = 32;
   int INTeger = 32;
 
   // long integerLong;                    // can carry 32 bit
-  long long integerLong = 3948563784695;  // can carry 64 bit
+  long long integerLong = 3948563784695; // can carry 64 bit
 
-  float floatNumber;    // can carry 32 bit
-  double doubleNumber;  // can carry 64 bit
+  float floatNumber;   // can carry 32 bit
+  double doubleNumber; // can carry 64 bit
 
   char nameInitial = 'S';
 
-  bool iAmAStudent = true;                // true is equal to = 1 | false is equal to = 0
+  bool iAmAStudent = true; // true is equal to = 1 | false is equal to = 0
 
   int a, b;
   float c, d;
   a = 47;
   b = 9;
 
-  c = 12.0;           // IMPORTANT! if we write 12, compiler would think it is an integer. we should add .0 to fixup.
-  c = (float)a;       // IMPORTANT! typecasting
+  c = 12.0;     // IMPORTANT! if we write 12, compiler would think it is an integer. we should add .0 to fixup.
+  c = (float)a; // IMPORTANT! typecasting
   d = 10.0;
 
-  int result = a/b;
-  int remainder = a%b;
-  int multiplication = a*b;
+  int result = a / b;
+  int remainder = a % b;
+  int multiplication = a * b;
 
-  float result2 = c/d;
-  
+  float result2 = c / d;
+
   // printf("result = %d kbjhbdfg %d \n", result, a);
   printf("result = %d\nremainder = %d\n", result, remainder);
 
@@ -42,18 +43,17 @@ int main() {
   printf("Multiplication: %d", multiplication);
 
   // TRICKY PART! EASY!
-  b=b+2;
-  b+=2;
+  b = b + 2;
+  b += 2;
 
-  // b/=10; // b=b/10
+  // b/=10; // b=b/10;
 
   printf("value of b: %d\n", b);
 
   int g = 1;
-  g++;      // g=g+1
+  g++; // g=g+1
   printf("value of g: %d\n", g);
 
-  
   // ANOTHER TRICKY PART^1
   int h = 1;
   printf("value of h (normal): %d\n", h);
@@ -66,8 +66,7 @@ int main() {
    * --h;
    */
 
-
-  // STARTING "Logic, if-else, while and for loop,switch"
+  // STARTING "Logic, if-else, while and for loop, switch"
   a = 21;
   b = 65;
 
@@ -83,22 +82,27 @@ int main() {
     }
   } */
 
-  // if we rewrite the if else again
-  if (a < NUMBER) {
+  // if we rewrite the if else again (with if..else if..else)
+  if (a < NUMBER)
+  {
     printf("%d is less than %d\n", a, NUMBER);
-  } else if (a == NUMBER) {
+  }
+  else if (a == NUMBER)
+  {
     printf("%d is equal to %d\n", a, NUMBER);
-  } else {
+  }
+  else
+  {
     printf("%d is greater than %d", a, NUMBER);
   }
 
-  
   // STARTING LOOP
   int counter = 0;
   counter = 1;
 
   // WHILE LOOP
-  while (counter<20) {
+  while (counter < 20)
+  {
     // first method
     // printf("Counter is %d\n", counter);
     // counter++;
@@ -116,7 +120,7 @@ int main() {
     // printf("Counter is %d\n", counter*=2);
     /* WARNING!
      * this code will hung the execution because if we multiply a number with 0, result will be always ZERO.
-    */
+     */
 
     // MULTIPLICATION (more important)
     // printf("Counter is %d\n", counter*=2);
@@ -124,44 +128,47 @@ int main() {
      * Above code is printing till 32, but it has to be till 20. there's a fix for it below.
      */
     printf("Counter is %d\n", counter);
-    counter*=2;
+    counter *= 2;
   }
 
   printf("current value of counter after loop: %d\n", counter);
 
-
   /* DO WHILE LOOP
    * think of a scenario that, in a while loop, if the condition is true then it executes.
-   * if the condition is not true, then noting is the code block is executed.
+   * if the condition is not true, then nothing in the code block is executed.
    * SO,
    * if we want to execute at least once the code, then if it's false, it won't run again.
    */
   int counter2 = 50;
-  
-  do {
-    printf("Counter2 is %d\n", counter2);
-    counter2*=2;
-  } while (counter2<20);
 
+  do
+  {
+    printf("Counter2 is %d\n", counter2);
+    counter2 *= 2;
+  } while (counter2 < 20);
 
   // FOR LOOP
-  for (int counter3 = 1; counter3 < 20; counter3*=2) {
-    printf("counter3 is = %d\n",counter3);
+  for (int counter3 = 1; counter3 < 20; counter3 *= 2)
+  {
+    printf("counter3 is = %d\n", counter3);
   }
 
-  for (int counter4 = 1; counter4 < 13; counter4++) {
-    if (counter4 == 10) {
+  for (int counter4 = 1; counter4 < 13; counter4++)
+  {
+    if (counter4 == 10)
+    {
       continue; // meaning it will skip the iteration; program will skip when 10 is the value.
     }
 
     printf("counter4 is = %d\n", counter4);
   }
 
-
   int userNumber = 12;
 
-  for (int counter5 = 1; counter5 < 30; counter5++) { // maximum we will go 30
-    if (counter5 == userNumber) {
+  for (int counter5 = 1; counter5 < 30; counter5++)
+  { // maximum we will go 30
+    if (counter5 == userNumber)
+    {
       break; // meaning it will stop the loop when the counter5 variable is 5.
     }
 
@@ -172,7 +179,7 @@ int main() {
   for (intialization; condition; increment;) {
     for (intialization; condition; increment;) {
       if (condition) {
-        break; 
+        break;
         // ⚠️👇
         // this break means, it will skip the for loop on the "second" loop.
         // not the first for loop.
@@ -184,8 +191,6 @@ int main() {
   // HOMEWORK: use continue and break inside while and do while loop
 
   // Starting SWITCH LOOP
-  
-
 
   // scanf("");
   // printf("Hello world! \n");
@@ -197,7 +202,7 @@ int main() {
 // scanf() asks user to input something
 // getchar() waits for user to input something
 
-// variables: "int" for integer. long for 
+// variables: "int" for integer. long for
 // when on decimal, its 5 and when in binary its 101
 // related topic: 32 bit, reduce memory waste, keyword
 // 32 bit means, computer can save 32 bits on an variable. Like, data type "int" and "long" can save 32 bits in memory (binary).
@@ -239,4 +244,3 @@ int main() {
 
 // while LOOP
 // while loop means execute "until when".
-
