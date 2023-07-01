@@ -192,6 +192,7 @@ int main()
 
   // Starting SWITCH LOOP
 
+    // BASIC
   // scanf("");
   // printf("Hello world! \n");
 
