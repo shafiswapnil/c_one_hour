@@ -190,9 +190,33 @@ int main()
 
   // HOMEWORK: use continue and break inside while and do while loop
 
-  // Starting SWITCH LOOP
+  /* SWITCH LOOP */
+  switch (userNumber)
+  {
+    /*
+    case 40:
+      printf("You're okay\n\n");
+      break;
 
-    // BASIC
+    case 45:
+      printf("You're okay\n\n");
+      break;
+    */
+
+  case 40:
+  case 45:
+  case 50:
+  case 56:
+    printf("You're okay\n\n");
+    break;
+
+  default:
+    printf("Invalid\n");
+  }
+
+  /**/
+
+  // BASIC
   // scanf("");
   // printf("Hello world! \n");
 
