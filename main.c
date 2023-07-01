@@ -3,6 +3,24 @@
 
 #define NUMBER 100 // PRE PROCESSOR DIRECTIVE
 
+/* FUNCTION AND SCOPE
+ * can use any name for function
+ * function return types are important. like,
+ * * if we want a function to return integer then we will use `int`
+ * * if we want a float then will use `float`
+ * * if we want the function to complete it's task and finish off, then we will use `void`
+ * YOU CANNOT NAME A FUNCTION `main`
+ * `main` FUNCTION IS THE FIRST PRIORITY OF COMPILER
+ */
+
+int addFunction(int firstNumber, int secondNumber)
+{
+  int result;
+  result = firstNumber + secondNumber;
+
+  return result;
+}
+
 int main()
 {
   // Starting "Variables, Data types & Arithmetic"
@@ -214,7 +232,10 @@ int main()
     printf("Invalid\n");
   }
 
-  /**/
+  /* FUNCTION AND SCOPE CONTINUATION */
+  int p = 10, q = 19;
+  int resultNumber = addFunction(p, q);
+  printf("Result Number from function, %d + %d = %d\n\n", p, q, resultNumber);
 
   // BASIC
   // scanf("");
