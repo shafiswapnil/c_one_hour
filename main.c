@@ -317,4 +317,5 @@ int main()
  *
  * GLOBAL - a variable is declared outside any block is called global variable
  *        - ⚠️ BE CAUTIOUS when using GLOBAL VARIABLE, it can be changed anytime if not made constant
+ *        - best practice is to make your global variable constant
  */

@@ -36,5 +36,15 @@ int main()
   printf("n (inside main function) = %d\n", n);
   // see here we can access the n variable from anywhere (2)
 
+  /* VARIABLE SCOPES
+   * LOCAL  - a variable is declared inside a block is called a local variable.
+   *        - this variable can not be accessed from outside.
+   *        - for example, a variable called j declared inside an if block cannot be accessed from outside.
+   *
+   * GLOBAL - a variable is declared outside any block is called global variable
+   *        - ⚠️ BE CAUTIOUS when using GLOBAL VARIABLE, it can be changed anytime if not made constant
+   *        - best practice is to make your global variable constant
+   */
+
   return 0;
 }
