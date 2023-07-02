@@ -3,7 +3,7 @@
 
 #define NUMBER 100 // PRE PROCESSOR DIRECTIVE
 
-/* FUNCTION AND SCOPE
+/* FUNCTION
  * can use any name for function
  * function return types are important. like,
  * * if we want a function to return integer then we will use `int`
@@ -21,6 +21,23 @@ int addFunction(int firstNumber, int secondNumber)
   return result;
 }
 
+void substractNumber(int num1, int num2)
+{
+  int subtraction = 0;
+
+  if (num1 > num2)
+  {
+    subtraction = num1 - num2;
+  }
+  else
+  {
+    subtraction = num2 - num1;
+  }
+
+  printf("Subtraction: %d\n\n", subtraction);
+  // return subtraction;
+}
+
 int main()
 {
   // Starting "Variables, Data types & Arithmetic"
@@ -28,7 +45,7 @@ int main()
   int INTEGER = 32;
   int INTeger = 32;
 
-  // long integerLong;                    // can carry 32 bit
+  // long integerLong;                   // can carry 32 bit
   long long integerLong = 3948563784695; // can carry 64 bit
 
   float floatNumber;   // can carry 32 bit
@@ -237,6 +254,8 @@ int main()
   int resultNumber = addFunction(p, q);
   printf("Result Number from function, %d + %d = %d\n\n", p, q, resultNumber);
 
+  substractNumber(p, q);
+
   // BASIC
   // scanf("");
   // printf("Hello world! \n");
@@ -290,3 +309,12 @@ int main()
 
 // while LOOP
 // while loop means execute "until when".
+
+/* VARIABLE SCOPES
+ * LOCAL  - a variable is declared inside a block is called a local variable.
+ *        - this variable can not be accessed from outside.
+ *        - for example, a variable called j declared inside an if block cannot be accessed from outside.
+ *
+ * GLOBAL - a variable is declared outside any block is called global variable
+ *        - ⚠️ BE CAUTIOUS when using GLOBAL VARIABLE, it can be changed anytime if not made constant
+ */
