@@ -57,7 +57,7 @@ int main()
 
 /* DECALRING A POINTER
  * typeName * variableName
- * example,
+ * example -
  * int * number;
  * char * text;
  * IT ACTUALLY SAVES THE ADDRESS OF A VARIABLE
