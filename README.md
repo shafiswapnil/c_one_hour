@@ -18,3 +18,13 @@ Data Types in C
 
 3. [Why we use the do while loop in C?](https://www.quora.com/Why-we-use-the-do-while-loop-in-C)
 
+## Scopes
+
+1. [Scope rules in C](https://www.geeksforgeeks.org/scope-rules-in-c/)
+
+## Pointers
+
+1. [Pointers in C](https://www.geeksforgeeks.org/c-pointers/)
+
+2. [you will never ask about pointers again after watching this video](https://youtu.be/2ybLD6_2gKM)
+
