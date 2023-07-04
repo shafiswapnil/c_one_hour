@@ -72,15 +72,12 @@ int main()
  */
 
 /* TO GET A POINTER VALUE
- * use `(*variableName)` to get the VALUE of the variable address
+ * use `(*variableName)` to get the VALUE of the variable address (ex. in printf or where needed)
  */
 
-/*
- * TERMS - Pass by value, Pass by reference
- */
-
-/* WHAT SYSTEM IS DOING
+/* MALLOC / WHAT SYSTEM IS DOING
  * when we declare a pointer, system gives an address (an envelope). but not enough space to store a value.
+ *
  * BUT TO ALLOCATE MEMORY TO POINTER -
  * 1. We use `malloc`
  * 2. Use `stdlib.h` (standard library) which contains `malloc`
