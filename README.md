@@ -4,7 +4,7 @@ Learning C in one tutorial with Zulkarnine Mahmud.
 
 Tutorial link - [YouTube](https://youtu.be/Bacf3wTY2EQ)
 
-> **Test yourself - [Solve C | HackerRank](https://www.hackerrank.com/domains/c)**
+> Test yourself - [Solve C | HackerRank](https://www.hackerrank.com/domains/c)
 
 ## Data Types
 
