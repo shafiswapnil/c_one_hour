@@ -1,12 +1,25 @@
-/* HackerRank - C Introduction - Pointers in C
-https://www.hackerrank.com/challenges/pointer-in-c/problem
-*/
+/*
+ * HackerRank - C Introduction - Pointers in C
+ * https://www.hackerrank.com/challenges/pointer-in-c/problem
+ */
 
 #include <stdio.h>
+#include <stdlib.h>
 
 void update(int *a, int *b)
 {
-  printf("%d %d\n", *a, *b);
+  /*
+  int a_dash = 0;
+  int b_dash = 0;
+  a_dash = *a + *b;
+  b_dash = abs(*a - *b);
+  *a = a_dash;
+  *b = b_dash;
+  */
+
+  int sum = *a + *b;
+  *b = abs(*a - *b);
+  *a = sum;
 }
 
 int main()
