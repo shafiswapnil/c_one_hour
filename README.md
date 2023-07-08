@@ -20,6 +20,10 @@ Data Types in C
 
 3. [Why we use the do while loop in C?](https://www.quora.com/Why-we-use-the-do-while-loop-in-C)
 
+## Nested Loops
+
+1. [Nested Loops in C with Examples](https://www.geeksforgeeks.org/nested-loops-in-c-with-examples/)
+
 ## Scopes
 
 1. [Scope rules in C](https://www.geeksforgeeks.org/scope-rules-in-c/)
