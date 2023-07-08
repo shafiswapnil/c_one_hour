@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 // typedef int integerNumber;
-
 typedef struct person
 {
   char name[50];
@@ -23,10 +22,10 @@ int main()
   printf("Your weight: \n");
   scanf("%d", &(demoperson.weight));
 
-  printf("Your height: \n");
+  printf("Your height (cm): \n");
   scanf("%d", &(demoperson.height));
 
-  printf("");
+  printf("Your name is: %s\nYou are %d years old\nYour height is: %dcm and you weight: %dkg\n", demoperson.name, demoperson.age, demoperson.height, demoperson.weight);
 
   return 0;
 }
