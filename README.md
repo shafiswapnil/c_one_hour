@@ -31,3 +31,7 @@ Data Types in C
 2. [you will never ask about pointers again after watching this video](https://youtu.be/2ybLD6_2gKM)
 
 3. [Dynamic Memory Allocation in C using malloc(), calloc(), free() and realloc()](https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/)
+
+## Struct
+
+1. [C struct | Programiz](https://www.programiz.com/c-programming/c-structures)
